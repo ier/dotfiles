@@ -18,3 +18,8 @@
 ### SSH key:
 * `ssh-keygen -t rsa -b 2048 -C "user@site.com"` generate ssh key
 * `ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.host.name` copy public key to remote host
+
+### Write ISO file to USB Stick
+* Download iso-file from `https://manjaro.org/downloads/official/gnome/`
+* Find out which drive letter your usb-stick has: `sudo fdisk -l`. 
+* Where [drive letter] is the letter of your removable device. Please note that it is the device (e.g. /dev/sdb), and not the partition number (e.g. /dev/sdb1). `sudo dd bs=4M if=/home/ier/Downloads/manjaro-gnome-21.0.7-minimal-210614-linux510.iso of=/dev/sdb status=progress oflag=sync`
