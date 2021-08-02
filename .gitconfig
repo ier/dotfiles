@@ -1,3 +1,5 @@
 [user]
   name = ier
   email = ivan.erakhtin@gmail.com
+[core]
+  excludesfile = ~/.gitignore_global
