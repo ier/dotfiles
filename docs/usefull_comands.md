@@ -2,6 +2,9 @@
 
 ## Bash
 
+### Dump files in octal and other formats
+* `od -A x -t x1z -v` - display hexdump format output
+
 ### Encode/decode string
 * `echo Привет | base64` encode string to base64
 * `echo 0J/RgNC40LLQtdGCCg== | base64 -d` decode base64-string back
@@ -34,3 +37,7 @@
 .lsp/
 ```
 4. Run command `$ git config --global core.excludesfile ~/.gitignore_global`
+
+### Java environments
+* `archlinux-java status` - List installed Java environments and enabled one
+* `archlinux-java set <JAVA_ENV>` - Force <JAVA_ENV> as default
