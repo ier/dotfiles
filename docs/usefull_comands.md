@@ -41,3 +41,12 @@
 ### Java environments
 * `archlinux-java status` - List installed Java environments and enabled one
 * `archlinux-java set <JAVA_ENV>` - Force <JAVA_ENV> as default
+
+### Cmus, a lightweight ncurses music player
+1. Install with `sudo pacman -S cmus`
+2. Run with `cmus`
+3. Create a playlist and add songs:
+    * `:pl-create my-playlist`
+    * `3` to navigate to the playlists window
+    * Highlight the new playlist and press `space` to mark it.
+    * `:add -p ~/Music/artist/` to add songs from that directory to the marked playlist.
