@@ -16,3 +16,6 @@ profiles.clj
 .calva/
 .clj-kondo/
 .lsp/
+.settings
+.project
+.classpath
