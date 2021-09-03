@@ -38,6 +38,14 @@
 ```
 4. Run command `$ git config --global core.excludesfile ~/.gitignore_global`
 
+### Git log
+```
+git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+```
+```
+git log --oneline --graph --decorate --all --simplify-by-decoration
+```
+
 ### Java environments
 * `archlinux-java status` - List installed Java environments and enabled one
 * `archlinux-java set <JAVA_ENV>` - Force <JAVA_ENV> as default
