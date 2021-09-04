@@ -20,7 +20,7 @@
 
 ### SSH key
 1. `ssh-keygen -t rsa -b 2048 -C "user@site.com"` generate ssh key
-2. `ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.host.name` copy public key to remote host
+2. `ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.host.ip` copy public key to remote host
 
 ### Write ISO file to USB Stick
 1. Download iso-file from `https://manjaro.org/downloads/official/gnome/`
