@@ -60,7 +60,7 @@ git log --oneline --graph --decorate --all --simplify-by-decoration
     * `:add -p ~/Music/artist/` to add songs from that directory to the marked playlist.
 
 ### VSCode plugins issue
-Edit `/usr/share/codium/resources/app/product.json` file:
+Edit `/usr/lib/code/product.json` file:
 Replace:
 ```
 "extensionsGallery": {
