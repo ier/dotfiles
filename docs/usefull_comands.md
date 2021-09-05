@@ -58,3 +58,21 @@ git log --oneline --graph --decorate --all --simplify-by-decoration
     * `3` to navigate to the playlists window
     * Highlight the new playlist and press `space` to mark it.
     * `:add -p ~/Music/artist/` to add songs from that directory to the marked playlist.
+
+### VSCode plugins issue
+Edit `/usr/share/codium/resources/app/product.json` file:
+Replace:
+```
+"extensionsGallery": {
+    "serviceUrl": "https://open-vsx.org/vscode/gallery",
+    "itemUrl": "https://open-vsx.org/vscode/item"
+  },
+```
+with:
+```
+"extensionsGallery": {
+    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+    "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
+    "itemUrl": "https://marketplace.visualstudio.com/items"
+  },
+```
