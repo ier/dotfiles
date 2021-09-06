@@ -22,6 +22,13 @@
 1. `ssh-keygen -t rsa -b 2048 -C "user@site.com"` generate ssh key
 2. `ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.host.ip` copy public key to remote host
 
+### SCP
+* `scp /home/ier/file.txt root@some-ip:/root/` - copy local file to remote folder
+* `scp root@some-ip:/root/file.txt /home/ier` - copy remote file to local folder
+* `scp root@some-ip:/root/file.txt root@another-ip:/root/` - copy file from one remote server to another remote server  
+* `scp -r /home/ier/docs/* root@losst.ru:/root/` - copy all files from local folder to remote server
+* `scp -r /home/ier/docs root@losst.ru:/root/` - copy whole local folder to remote server
+
 ### Write ISO file to USB Stick
 1. Download iso-file from `https://manjaro.org/downloads/official/gnome/`
 2. Find out which drive letter your usb-stick has: `sudo fdisk -l`. 
