@@ -9,6 +9,10 @@
 * `echo Привет | base64` encode string to base64
 * `echo 0J/RgNC40LLQtdGCCg== | base64 -d` decode base64-string back
 
+### iconv
+Converts text from one character encoding to another
+Here is an [example](https://github.com/ier/dotfiles/blob/main/scripts/enconv.sh) of iconv usage  
+
 ### File system
 * `ls -lah` list all files in current directory in table view with human-readable way
 
