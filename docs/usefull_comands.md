@@ -57,7 +57,7 @@ git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%
 git log --oneline --graph --decorate --all --simplify-by-decoration
 ```
 
-### Git
+### Fix git commit message text
 ```
 git add .
 git commit --amend -m "Fixed comment text"
