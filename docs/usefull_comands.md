@@ -57,6 +57,13 @@ git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%
 git log --oneline --graph --decorate --all --simplify-by-decoration
 ```
 
+### Git
+```
+git add .
+git commit --amend -m "Fixed comment text"
+git push
+```
+
 ### Java environments
 * `archlinux-java status` - List installed Java environments and enabled one
 * `archlinux-java set <JAVA_ENV>` - Force <JAVA_ENV> as default
