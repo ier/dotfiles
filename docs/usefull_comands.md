@@ -3,7 +3,7 @@
 ## Bash
 
 ### Dump files in octal and other formats
-* `od -A x -t x1z -v` - display hexdump format output
+* `echo "text" | od -A x -t x1z -v` - display hexdump format output
 
 ### Encode/decode string
 * `echo Привет | base64` encode string to base64
@@ -65,8 +65,11 @@ git push
 ```
 
 ### Java environments
+#### Arch
 * `archlinux-java status` - List installed Java environments and enabled one
 * `archlinux-java set <JAVA_ENV>` - Force <JAVA_ENV> as default
+#### Ubuntu
+* `sudo update-alternatives --config java`
 
 ### Cmus, a lightweight ncurses music player
 1. Install with `sudo pacman -S cmus`
