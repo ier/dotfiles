@@ -80,6 +80,9 @@ git push
     * Highlight the new playlist and press `space` to mark it.
     * `:add -p ~/Music/artist/` to add songs from that directory to the marked playlist.
 
+### Find out list of open ports
+`ss -lntu`
+
 ### [Archived] VSCode plugins issue
 Edit `/usr/lib/code/product.json` file:
 Replace:
