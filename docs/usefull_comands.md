@@ -38,6 +38,18 @@ Here is an [example](https://github.com/ier/dotfiles/blob/main/scripts/enconv.sh
 2. Find out which drive letter your usb-stick has: `sudo fdisk -l`. 
 3. Where [drive letter] is the letter of your removable device. Please note that it is the device (e.g. /dev/sdb), and not the partition number (e.g. /dev/sdb1). `sudo dd bs=4M if=/home/ier/Downloads/manjaro-gnome-21.0.7-minimal-210614-linux510.iso of=/dev/sdb status=progress oflag=sync`
 
+### Create a swap file
+1. `df -h`
+2. `sudo fdisk -l /dev/sda`
+3. `sudo dd if=/dev/zero of=/swapfile bs=128M status=progress count=128 oflag=sync`
+4. `sudo chmod 600 /swapfile`
+5. `sudo mkswap /swapfile`
+6. `sudo swapon /swapfile`
+7. Edit `fstab` file with `sudo vim /etc/fstab` command (add the following line):
+```
+/swapfile	none	swap	defaults	0	0
+```
+
 ### Global .gitignore 
 1. Create `~/.gitignore_global`
 2. Add some rules to it. Consider to use this handy service `https://gitignore.io` E.g. rules for [Clojure](https://www.toptal.com/developers/gitignore/api/clojure).
@@ -82,21 +94,3 @@ git push
 
 ### Find out list of open ports
 `ss -lntu`
-
-### [Archived] VSCode plugins issue
-Edit `/usr/lib/code/product.json` file:
-Replace:
-```
-"extensionsGallery": {
-    "serviceUrl": "https://open-vsx.org/vscode/gallery",
-    "itemUrl": "https://open-vsx.org/vscode/item"
-  },
-```
-with:
-```
-"extensionsGallery": {
-    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
-    "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
-    "itemUrl": "https://marketplace.visualstudio.com/items"
-  },
-```
