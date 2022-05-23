@@ -69,11 +69,23 @@ git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%
 git log --oneline --graph --decorate --all --simplify-by-decoration
 ```
 
-### Fix git commit message text
+### Fix Git commit message text
 ```
 git add .
 git commit --amend -m "Fixed comment text"
 git push
+```
+
+### Change a Git repository from HTTPS to SSH
+```
+cd ~/projects/reponame
+git remote -v
+git remote set-url origin git@github.com:zen-lang/zen-lsp.git
+```
+```
+cd ~/projects/reponame
+git remote get-url --all origin
+git remote set-url origin git@github.com:zen-lang/zen-lsp.git
 ```
 
 ### Java environments
