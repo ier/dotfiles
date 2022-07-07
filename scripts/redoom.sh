@@ -13,3 +13,5 @@ rm -rf ~/.doom.d
 git clone https://github.com/ier/.doom.d.git ~/.doom.d
 
 ./doom sync
+
+sudo pacman -S ttc-iosevka
