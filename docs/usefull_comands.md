@@ -26,6 +26,28 @@ Here is an [example](https://github.com/ier/dotfiles/blob/main/scripts/enconv.sh
 1. `ssh-keygen -t rsa -b 2048 -C "user@site.com"` generate ssh key
 2. `ssh-copy-id -i ~/.ssh/id_rsa.pub user@remote.host.ip` copy public key to remote host
 
+### Forcing ssh cliet to use given private key
+`ssh -i ~/.ssh/id_rsa user@ip`
+
+### Add public key to github
+1. `ssh-keygen -t ed25519`
+2. `cat ~/.ssh/id_ed25519.pub`
+3. Select and copy the contents of the id_ed25519.pub file displayed in the terminal to your clipboard
+4. Paste your key into the "Key" field at your github profile settings page. [Details](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+### Using '~/.ssh/config' file
+```
+Host *
+   IdentitiesOnly yes
+   
+Host ls.backup
+   Hostname 23.x.y.z
+   User admin
+   IdentityFile ~/.ssh/cloud/aws/LightSailDefaultKey-us-east-1.pem
+   
+...
+```
+
 ### SCP
 * `scp /home/ier/file.txt root@some-ip:/root/` - copy local file to remote folder
 * `scp root@some-ip:/root/file.txt /home/ier` - copy remote file to local folder
