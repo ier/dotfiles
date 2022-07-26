@@ -128,3 +128,8 @@ git remote set-url origin git@github.com:zen-lang/zen-lsp.git
 
 ### Find out list of open ports
 `ss -lntu`
+
+### Fix not available Bluetooth after Sleep/Startup
+`sudo rfkill list` - verify that the Bluetooth device is not blocked  
+`sudo rfkill unblock bluetooth` - unblock the device  
+`sudo systemctl status bluetooth` - verify if the Bluetooth service is enabled and active
