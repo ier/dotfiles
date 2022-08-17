@@ -129,6 +129,34 @@ git remote set-url origin git@github.com:zen-lang/zen-lsp.git
 ### Find out list of open ports
 `ss -lntu`
 
+### SSH tunneling from the terminal
+```
+ssh -N -L5444:10.11.120.4:5432 service.qa
+```
+
+### SSH tunneling from the shell script
+```
+#!/usr/bin/env bash
+
+ssh -fN -L5444:10.11.120.4:5432 user@host
+sllep 10
+
+export PGUSER=user
+export PGHOST=localhost
+export PGPORT=5444
+export PGPASSWOR=...
+
+psql dbname
+```
+
+### Turn off open tunnel
+```
+ss -tulpn
+...
+kill <PID>
+```
+
+
 ### Fix not available Bluetooth after Sleep/Startup
 `sudo rfkill list` - verify that the Bluetooth device is not blocked  
 `sudo rfkill unblock bluetooth` - unblock the device  
