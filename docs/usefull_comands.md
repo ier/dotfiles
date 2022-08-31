@@ -156,8 +156,19 @@ ss -tulpn
 kill <PID>
 ```
 
-
 ### Fix not available Bluetooth after Sleep/Startup
 `sudo rfkill list` - verify that the Bluetooth device is not blocked  
 `sudo rfkill unblock bluetooth` - unblock the device  
 `sudo systemctl status bluetooth` - verify if the Bluetooth service is enabled and active
+
+### Fix `GPGME error: No data`
+The problem:
+`sudo pacman -Syu`
+```
+error: GPGME error: No data
+error: failed to synchronize all databases (invalid or corrupted database (PGP signature))
+```
+
+The solution:
+`sudo rm -R /var/lib/pacman/sync`
+`sudo pacman -Syu`
