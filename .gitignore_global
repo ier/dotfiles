@@ -1,3 +1,4 @@
+# Clojure
 pom.xml
 pom.xml.asc
 *.jar
@@ -19,3 +20,6 @@ profiles.clj
 .settings
 .project
 .classpath
+
+# Emacs
+.projectile
