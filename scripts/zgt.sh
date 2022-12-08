@@ -27,4 +27,4 @@ cat ~/.oh-my-zsh/plugins/git/git.plugin.zsh \
 # todo:
 # 0. notify if zsh or plugin are not installed
 # 1. friendly output in "no results" case
-# 2. Empty output -> exit with no result warning text
+# 2. ...
