@@ -16,3 +16,4 @@ git clone https://github.com/ier/.doom.d.git ~/.doom.d
 
 sudo pacman -S ripgrep
 sudo pacman -S ttc-iosevka
+sudo pacman -S cmake
