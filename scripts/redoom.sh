@@ -12,7 +12,7 @@ cd ~/.emacs.d/bin
 rm -rf ~/.doom.d
 git clone https://github.com/ier/.doom.d.git ~/.doom.d
 
-./doom sync
+./doom sync && ./doom build
 
 sudo pacman -S ripgrep
 sudo pacman -S ttc-iosevka
