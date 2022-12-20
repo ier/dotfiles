@@ -122,7 +122,7 @@ git remote set-url origin git@github.com:zen-lang/zen-lsp.git
     * `:add -p ~/Music/artist/` to add songs from that directory to the marked playlist.
 
 ### Find out list of open ports
-`ss -lntu`
+`ss -tulpn`
 
 ### SSH tunneling from the terminal
 ```
