@@ -167,3 +167,22 @@ error: failed to synchronize all databases (invalid or corrupted database (PGP s
 The solution:
 `sudo rm -R /var/lib/pacman/sync`
 `sudo pacman -Syu`
+
+### Diff files
+#### Using git:
+`git diff ~/01.txt ~/02.txt`
+
+#### Without git:
+Install colordiff: `sudo pacman -S colordiff`
+
+Update your `.zshrc` appendig the following:
+```
+# colorful diff
+cdi() {
+    colordiff -Naru "$1" "$2" | less -Rsi
+}
+```
+
+Evaluate setting for current zsh session: `source ~/.zshrc`
+
+Use `cdi` to compare files: `cdi ~/01.txt ~/02.txt`
