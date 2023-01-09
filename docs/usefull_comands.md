@@ -157,8 +157,7 @@ kill <PID>
 `sudo systemctl status bluetooth` - verify if the Bluetooth service is enabled and active
 
 ### Fix `GPGME error: No data`
-The problem:
-`sudo pacman -Syu`
+The problem: running the command `sudo pacman -Syu` causes the following error:
 ```
 error: GPGME error: No data
 error: failed to synchronize all databases (invalid or corrupted database (PGP signature))
