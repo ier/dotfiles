@@ -6,7 +6,7 @@
 * `echo "text" | od -A x -t x1z -v` - display hexdump format output
 
 ### Encode/decode string
-* `echo Привет | base64` encode string to base64
+* `echo -n 'Привет' | base64` encode string to base64 (without the `-n` flag you may capture a hidden characters, which will corrupt the encoding)
 * `echo 0J/RgNC40LLQtdGCCg== | base64 -d` decode base64-string back
 
 ### iconv
