@@ -119,7 +119,7 @@ git remote set-url origin git@github.com:zen-lang/zen-lsp.git
     * `:pl-create my-playlist`
     * `3` to navigate to the playlists window
     * Highlight the new playlist and press `space` to mark it.
-    * `:add -p ~/Music/artist/` to add songs from that directory to the marked playlist.
+    * `:add ~/Music/artist/` to add songs from that directory to the marked playlist.
 
 ### Find out list of open ports
 `ss -tulpn`
