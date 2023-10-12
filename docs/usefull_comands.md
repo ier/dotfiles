@@ -185,3 +185,14 @@ cdi() {
 Evaluate setting for current zsh session: `source ~/.zshrc`
 
 Use `cdi` to compare files: `cdi ~/01.txt ~/02.txt`
+
+### Lein version
+Change lein to specific version:
+```
+lein downgrade 2.8.1
+```
+
+Change lein to latest version:
+```
+lein upgrade
+```
