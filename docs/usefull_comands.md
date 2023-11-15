@@ -112,6 +112,9 @@ git remote set-url origin git@github.com:zen-lang/zen-lsp.git
 #### Ubuntu
 * `sudo update-alternatives --config java`
 
+### jre-openjdk and jre-openjdk-headless are in conflict
+`sudo pacman -S java-runtime`
+
 ### Cmus, a lightweight ncurses music player
 1. Install with `sudo pacman -S cmus`
 2. Run with `cmus`
