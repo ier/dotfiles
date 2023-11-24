@@ -103,6 +103,20 @@ git remote -v # or like this: git remote get-url --all origin
 git remote set-url origin git@github.com:zen-lang/zen-lsp.git
 ```
 
+## Git submodule
+Clone repo with submodule with one `clone` command:
+```
+cd ~/src
+git clone git@github.com:user/repo.git --recursive
+```
+or with `clone` and `submodule update` commands sequence:
+```
+cd ~/src
+git clone git@github.com:user/repo.git
+cd repo
+git submodule update --init --recursive path/to/submodule/folder
+```
+
 ## Java environments
 ### Arch
 * `archlinux-java status` - List installed Java environments and enabled one
