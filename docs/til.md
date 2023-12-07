@@ -117,6 +117,14 @@ cd repo
 git submodule update --init --recursive path/to/submodule/folder
 ```
 
+## How to migrate a Bitbucket repository to Github?
+```
+git clone --mirror git@bitbucket.org:user/repo.git
+cd repo.git
+git remote set-url --push origin git@github.com:user/repo.git
+git push --mirror
+```
+
 ## Java environments
 ### Arch
 * `archlinux-java status` - List installed Java environments and enabled one
