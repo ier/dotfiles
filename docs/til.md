@@ -137,8 +137,8 @@ git push --mirror
 
 ## Cmus, a lightweight ncurses music player
 1. Install with `sudo pacman -S cmus`
-2. Run with `cmus`
-3. Create a playlist and add songs:
+1. Run with `cmus`
+1. Create a playlist and add songs:
     * `:pl-create my-playlist`
     * `3` to navigate to the playlists window
     * Highlight the new playlist and press `space` to mark it.
@@ -218,4 +218,19 @@ lein downgrade 2.8.1
 Change lein to latest version:
 ```
 lein upgrade
+```
+
+## Firefix tabs
+### How to save the currently opened tabs (URLs) of Firefox into a text file
+1. Right click on any tab
+1. Choose "Bookmark all tabs"
+1. Right click the folder
+1. Choose "copy"
+1. Now you have got the URLs in clipboard
+1. Save clipboard content to urls.txt
+
+### Restore URLs in Firefox
+Firefox process should be running:
+```bash
+cat urls.txt | while read i; do firefox -new-tab $i; done
 ```
