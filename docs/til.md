@@ -126,6 +126,9 @@ git remote set-url --push origin git@github.com:user/repo.git
 git push --mirror
 ```
 
+## OhMyZsh git aliases helper
+Here is the [script](https://github.com/ier/dotfiles/blob/main/scripts/zgt.sh) to choose the right command alias
+
 ## Java environments
 ### Arch
 * `archlinux-java status` - List installed Java environments and enabled one
