@@ -13,6 +13,7 @@ Here is an [example](https://github.com/ier/dotfiles/blob/main/scripts/enconv.sh
 
 ## File system
 * `ls -lah` list all files in current directory in table view with human-readable way
+* `find /home/ier -type f -name 'filename.txt'` search for file in directory herarchy (most used type param values: -f = file, -d = directory)
 
 ## Text search
 * `grep -rnw 'path/to/place/' -e 'pattern'` - search for pattern in all files (r=recursively, n=show line number, w=match the whole word)
