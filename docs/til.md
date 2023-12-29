@@ -89,6 +89,9 @@ git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%
 ```
 git log --oneline --graph --decorate --all --simplify-by-decoration
 ```
+You have an alias `glgg` if you use `zsh`
+
+Hint: Take a look at [this helper's script](https://github.com/ier/dotfiles/blob/main/docs/til.md#ohmyzsh-git-aliases-helper)
 
 ## Fix Git commit message text
 ```
