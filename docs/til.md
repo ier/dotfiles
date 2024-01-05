@@ -128,6 +128,14 @@ cd repo.git
 git remote set-url --push origin git@github.com:user/repo.git
 git push --mirror
 ```
+## The default branch has been renamed
+If you have a local clone, you can update it by running the following commands:
+```
+git branch -m master main
+git fetch origin
+git branch -u main main
+git remote set-head origin -a
+```
 
 ## OhMyZsh git aliases helper
 Here is the [script](https://github.com/ier/dotfiles/blob/main/scripts/zgt.sh) to choose the right command alias
