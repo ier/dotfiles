@@ -194,6 +194,9 @@ kill <PID>
 `sudo rfkill unblock bluetooth` - unblock the device  
 `sudo systemctl status bluetooth` - verify if the Bluetooth service is enabled and active
 
+## Enable/disable Bluetooth device
+`bluetooth toggle`
+
 ## Fix `GPGME error: No data`
 The problem: running the command `sudo pacman -Syu` causes the following error:
 ```
