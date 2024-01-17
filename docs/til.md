@@ -252,3 +252,8 @@ Firefox process should be running:
 ```bash
 cat urls.txt | while read i; do firefox -new-tab $i; done
 ```
+
+## Find and replace spaces with new lines
+`:%s/ /\n\g` - within the whole buffer
+
+`:'<,'>s/ /\n\g` - within the selection
