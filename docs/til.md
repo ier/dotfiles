@@ -257,3 +257,22 @@ cat urls.txt | while read i; do firefox -new-tab $i; done
 `:%s/ /\n\g` - within the whole buffer
 
 `:'<,'>s/ /\n\g` - within the selection
+
+## Flatpak
+### Installing
+```
+pamac install flatpak libpamac-flatpak-plugin
+```
+
+### Managing Flatpaks via Gnome Software
+```
+pamac install gnome-software
+```
+
+### Managing Flatpaks via the CLI
+```
+flatpak search foo
+flatpak install com.foo.www
+```
+
+[Reference](https://wiki.manjaro.org/index.php/Flatpak)
