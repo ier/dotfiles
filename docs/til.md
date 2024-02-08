@@ -1,7 +1,15 @@
 # Bash
 
 ## Dump files in octal and other formats
-* `echo "text" | od -A x -t x1z -v` - display hexdump format output
+### od
+`od` dumps files in octal and other formats. E.g. display hexdump format output:
+`echo "text" | od -A x -t x1z -v`
+### xxd
+`xxd` creates a hex dump of a given file or standard input. It can also convert a hex dump back to its original binary form.
+E.g. the same result as above but with slightly pretty output:
+```
+echo "text" | xxd
+```
 
 ## Encode/decode string
 * `echo -n 'Привет' | base64` encode string to base64 (without the `-n` flag you may capture a hidden characters, which will corrupt the encoding)
