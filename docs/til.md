@@ -285,3 +285,20 @@ flatpak install com.foo.www
 ```
 
 [Reference](https://wiki.manjaro.org/index.php/Flatpak)
+
+## Commands history
+
+### grep history
+```
+history | grep 'your command text'
+```
+### history commands interval (show commands between items 10 and 20)
+`history | sed -n '10,20p'` - using sed on history
+
+`history | awk 'NR >= 10 && NR <= 20'` - using awk on history
+
+`fc -l 10 20` - using fc
+### history command timestamp (in zsh)
+```
+history -E
+```
