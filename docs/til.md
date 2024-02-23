@@ -247,15 +247,6 @@ Change lein to latest version:
 lein upgrade
 ```
 
-## Firefix tabs
-### How to save the currently opened tabs (URLs) of Firefox into a text file
-1. Right click on any tab
-1. Choose "Bookmark all tabs"
-1. Right click the folder
-1. Choose "copy"
-1. Now you have got the URLs in clipboard
-1. Save clipboard content to urls.txt
-
 ### Restore URLs in Firefox
 Firefox process should be running:
 ```bash
