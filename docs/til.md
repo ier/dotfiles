@@ -293,3 +293,8 @@ history | grep 'your command text'
 ```
 history -E
 ```
+
+## Update Zoom
+1. Visit https://us04web.zoom.us/support/down4j
+2. Choose: Linux Type: Arch, OS Architecture: 64 bit and download the file
+3. Run: `sudo pacman -U Downloads/zoom_x86_64.pkg.tar.xz`
