@@ -298,3 +298,15 @@ history -E
 1. Visit https://us04web.zoom.us/support/down4j
 2. Choose: Linux Type: Arch, OS Architecture: 64 bit and download the file
 3. Run: `sudo pacman -U Downloads/zoom_x86_64.pkg.tar.xz`
+
+
+## rsync
+1. Get the latest file name in folder of remote machine:
+`rsync server:/home/ier/backups/'*' | tail -1`
+`-rw-rw-r--      9.479.702 2024/03/06 16:52:03 file_20240306-1652.sql.gz`
+2. Get only the file name from the previous output:
+`rsync server:/home/ier/backups/'*' | tail -1 | rev | cut -d ' ' -f1 | rev`
+`file_20240306-1652.sql.gz`
+3. Get the latest file name in local folder:
+`ls -dtr1 /home/backups/* | tail -1`
+`/home/backups/file_20240305-1652.sql.gz`
