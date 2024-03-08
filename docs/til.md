@@ -301,19 +301,19 @@ history -E
 
 
 ## rsync
-1. Get the latest file name in folder of remote machine:
+Get the latest file name in folder of remote machine:
 
 `rsync server:/home/ier/backups/'*' | tail -1`
 
 output: `-rw-rw-r--      9.479.702 2024/03/06 16:52:03 file_20240306-1652.sql.gz`
 
-2. Get only the file name from the previous output:
+Get only the file name from the previous output:
 
 `rsync server:/home/ier/backups/'*' | tail -1 | rev | cut -d ' ' -f1 | rev`
 
 output: `file_20240306-1652.sql.gz`
 
-3. Get the latest file name in local folder:
+Get the latest file name in local folder:
 
 `ls -dtr1 /home/backups/* | tail -1`
 
