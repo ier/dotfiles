@@ -318,3 +318,9 @@ Get the latest file name in local folder:
 `ls -dtr1 /home/backups/* | tail -1`
 
 output: `/home/backups/file_20240305-1652.sql.gz`
+
+## How to close a frozen SSH session
+Press the following keys steb by step:
+1. Enter
+2. ~ (tilde)
+3. . (period)
