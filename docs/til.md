@@ -321,6 +321,8 @@ output: `/home/backups/file_20240305-1652.sql.gz`
 
 ## How to close a frozen SSH session
 Press the following keys steb by step:
-1. Enter
-2. ~ (tilde)
-3. . (period)
+1. `Enter`
+2. `~` (tilde)
+3. `.` (period)
+
+`Enter, ~, ?` - list other escape sequences
