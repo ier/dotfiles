@@ -64,9 +64,15 @@ Host ls.backup
 * `scp -r /home/ier/docs root@losst.ru:/root/` - copy whole local folder to remote server
 
 ## Write ISO file to USB Stick
+### Manjaro
 1. Download iso-file from `https://manjaro.org/downloads/official/gnome/`
 2. Find out which drive letter your usb-stick has: `sudo fdisk -l`. 
 3. Where [drive letter] is the letter of your removable device. Please note that it is the device (e.g. /dev/sdb), and not the partition number (e.g. /dev/sdb1). `sudo dd bs=4M if=/home/ier/Downloads/manjaro-gnome-21.0.7-minimal-210614-linux510.iso of=/dev/sdb status=progress oflag=sync`
+
+### Arch
+1. Download iso-file from `https://geo.mirror.pkgbuild.com/iso/`
+2. Find out which drive letter your usb-stick has: `sudo fdisk -l`.
+3.  Where [drive letter] is the letter of your removable device. Please note that it is the device (e.g. /dev/sdb), and not the partition number (e.g. /dev/sdb1). `sudo dd bs=4M if=/home/ier/Downloads/archlinux-2024.04.01-x86_64.iso of=/dev/sdb conv=fsync oflag=direct status=progress`
 
 ## Create a swap file
 1. `df -h`
