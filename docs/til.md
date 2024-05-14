@@ -24,6 +24,28 @@ Here is an [example](https://github.com/ier/dotfiles/blob/main/scripts/enconv.sh
 * `find /home/ier -type f -name 'filename.txt'` search for file in directory herarchy (most used type param values: -f = file, -d = directory)
 * `df -h` - report file system space usage (-h - human readable)
 
+## exfat-utils
+check your partitions list:
+```
+sudo fdisk -l
+```
+or
+```
+lsblk
+```
+Install package:
+```
+sudo pacman -S exfat-utils
+```
+Format partition
+```
+sudo mkfs.exfat -n strg /dev/sdXN
+```
+Check the result
+```
+sudo fsck.exfat /dev/sdXN
+```
+
 ## Text search
 * `grep -rnw 'path/to/place/' -e 'pattern'` - search for pattern in all files (r=recursively, n=show line number, w=match the whole word)
 * `grep --include=\*.{clj,edn} -rnw 'path/to/place/' -e 'pattern'` - search in files with specific file name extansions
