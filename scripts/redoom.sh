@@ -14,9 +14,8 @@ git clone https://github.com/ier/.doom.d.git ~/.doom.d
 
 ./doom sync && ./doom build
 
-sudo pacman -S ripgrep
+sudo pacman -S ripgrep fd cmake
 sudo pacman -S ttc-iosevka
-sudo pacman -S cmake
 
 ;; deprecated: M-x nerd-icons-install-fonts RET
 ;; M-x all-the-icons-install-fonts RET
