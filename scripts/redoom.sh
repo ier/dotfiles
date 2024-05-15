@@ -5,9 +5,8 @@ rm -rf ~/.emacs.d
 
 sudo pacman -S emacs
 
-git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
-cd ~/.emacs.d/bin
-./doom install
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
 
 rm -rf ~/.doom.d
 git clone https://github.com/ier/.doom.d.git ~/.doom.d
