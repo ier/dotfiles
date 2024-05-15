@@ -18,4 +18,5 @@ sudo pacman -S ripgrep
 sudo pacman -S ttc-iosevka
 sudo pacman -S cmake
 
-;; M-x nerd-icons-install-fonts RET
+;; deprecated: M-x nerd-icons-install-fonts RET
+;; M-x all-the-icons-install-fonts RET
