@@ -13,4 +13,4 @@ git clone https://github.com/ier/.doom.d.git ~/.config/doom
 
 ~/.config/emacs/bin/doom sync && ~/.config/emacs/bin/doom build
 
-;; M-x nerd-icons-install-fonts RET
+# M-x nerd-icons-install-fonts RET
