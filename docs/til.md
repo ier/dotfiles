@@ -25,7 +25,7 @@ Here is an [example](https://github.com/ier/dotfiles/blob/main/scripts/enconv.sh
 * `df -h` - report file system space usage (-h - human readable)
 
 ## exfat-utils
-check your partitions list:
+Check your partitions list:
 ```
 sudo fdisk -l
 ```
@@ -45,7 +45,32 @@ Check the result
 ```
 sudo fsck.exfat /dev/sdXN
 ```
-
+### Repairing Errors on exFAT Drives
+To do a dry run read-only check of an exFAT volume:
+```
+sudo fsck.exfat -n /dev/sdXN
+```
+To automatically repair issues if found:
+```
+sudo fsck.exfat -y /dev/sdXN
+```
+### Mount NTFS Partition
+Create a mount point:
+```
+sudo mkdir /mnt/ntfs1
+```
+Install `Third Generation Read/Write NTFS Driver` package:
+```
+sudo pacman -S ntfs-3g
+```
+Mount partition:
+```
+sudo mount -t ntfs-3g /dev/sdXN /mnt/ntfs1/
+```
+Check the result:
+```
+df -hT
+```
 ## Text search
 * `grep -rnw 'path/to/place/' -e 'pattern'` - search for pattern in all files (r=recursively, n=show line number, w=match the whole word)
 * `grep --include=\*.{clj,edn} -rnw 'path/to/place/' -e 'pattern'` - search in files with specific file name extansions
