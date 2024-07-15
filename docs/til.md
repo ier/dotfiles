@@ -379,3 +379,17 @@ Press the following keys steb by step:
 3. `.` (period)
 
 `Enter, ~, ?` - list other escape sequences
+
+## Enable Parallel Downloading In Pacman In Arch Linux
+`ParallelDownloads` option specifies number of concurrent download streams.
+It is disabled by default and the default value is 5. 
+If this config option is not set then only one download stream is used (i.e. downloads happen sequentially).
+
+1. Open `/etc/pacman.conf` file in your preferred editor:
+```
+$ sudo vin /etc/pacman.conf
+```
+2. Find the following line, uncomment it and update default value 5 to 10:
+```
+ParallelDownloads = 10
+```
