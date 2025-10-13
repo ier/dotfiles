@@ -393,3 +393,9 @@ $ sudo vin /etc/pacman.conf
 ```
 ParallelDownloads = 10
 ```
+
+## Getting the CPU info
+`cat /proc/cpuinfo`
+
+## How to get the GPU info
+`lspci -k | grep -A 2 -E "(VGA|3D)"`
