@@ -119,7 +119,7 @@ Host ls.backup
 ### Arch
 1. Download iso-file from `https://geo.mirror.pkgbuild.com/iso/`
 2. Find out which drive letter your usb-stick has: `sudo fdisk -l`.
-3.  Where [drive letter] is the letter of your removable device. Please note that it is the device (e.g. /dev/sdb), and not the partition number (e.g. /dev/sdb1). `sudo dd bs=4M if=/home/ier/Downloads/archlinux-2024.04.01-x86_64.iso of=/dev/sdb conv=fsync oflag=direct status=progress`
+3.  Where [drive letter] is the letter of your removable device. Please note that it is the device (e.g. /dev/sdb), and not the partition number (e.g. /dev/sdb1). `sudo dd bs=4M if=/home/ier/Downloads/archlinux-2024.04.01-x86_64.iso of=/dev/sdb conv=fsync oflag=direct status=progress && sync`
 
 ## Create a swap file
 1. `df -h`
@@ -399,3 +399,4 @@ ParallelDownloads = 10
 
 ## How to get the GPU info
 `lspci -k | grep -A 2 -E "(VGA|3D)"`
+
