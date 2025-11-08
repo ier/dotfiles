@@ -406,10 +406,12 @@ ParallelDownloads = 10
 ```
 [Honor Magicbook Art 14 TOPS0102 Touchpad]
 MatchName=TOPS0102:00 35CC:0104 Touchpad
+MatchUdevType=touchpad
 AttrPressureRange=1:0
 AttrThumbPressureThreshold=45
 AttrPalmPressureThreshold=0
 ModelPressurePad=1
 ```
 3. Save the file and reboot
-[Reference](https://www.reddit.com/r/Honor/comments/1go55j4/honor_magicbook_art_14_linux_compatibility/)
+[Reference 1](https://www.reddit.com/r/Honor/comments/1go55j4/honor_magicbook_art_14_linux_compatibility/)
+[Reference 2](https://wayland.freedesktop.org/libinput/doc/latest/clickpad-with-right-button.html)
