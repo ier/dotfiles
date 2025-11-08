@@ -400,3 +400,16 @@ ParallelDownloads = 10
 ## How to get the GPU info
 `lspci -k | grep -A 2 -E "(VGA|3D)"`
 
+## Honor MagicBook Art 14 touchpad issue
+1. Create `/etc/libinput/local-overrides.quirks`
+2. Add the following content:
+```
+[Honor Magicbook Art 14 TOPS0102 Touchpad]
+MatchName=TOPS0102:00 35CC:0104 Touchpad
+AttrPressureRange=1:0
+AttrThumbPressureThreshold=45
+AttrPalmPressureThreshold=0
+ModelPressurePad=1
+```
+3. Save the file and reboot
+[Reference](https://www.reddit.com/r/Honor/comments/1go55j4/honor_magicbook_art_14_linux_compatibility/)
