@@ -415,3 +415,8 @@ ModelPressurePad=1
 3. Save the file and reboot
 [Reference 1](https://www.reddit.com/r/Honor/comments/1go55j4/honor_magicbook_art_14_linux_compatibility/)
 [Reference 2](https://wayland.freedesktop.org/libinput/doc/latest/clickpad-with-right-button.html)
+
+## convert iamges
+```
+ffmpeg -i image.webp image.png
+```
